@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B7001C1F-5550-4AAB-9648-16CCDD1874D7}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{B7001C1F-5550-4AAB-9648-16CCDD1874D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="SE" ID="{C5A25071-70D9-4E54-B882-67DE946E92AC}" ShortID="843614783">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F4DE8CF-1EA4-4D3E-969B-59D6204C769A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SE" ID="{50DB5A26-6D6E-42AB-9FE2-E8CDE0F1E59E}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SE_Move" ID="{BA6DCC2C-214B-4D68-BA89-E930331ACBEC}" ShortID="630367100">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F4DE8CF-1EA4-4D3E-969B-59D6204C769A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SE-Approach" ID="{45126C3F-934A-47AC-89A3-51ACE9EB5F63}">
+									<Language>SFX</Language>
+									<AudioFile>SE-Approach.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="702967015"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SE-Approach" ID="{45126C3F-934A-47AC-89A3-51ACE9EB5F63}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SE_Attack" ID="{3472D25A-24D0-4BD1-A453-40C0F4C82682}" ShortID="864463598">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F4DE8CF-1EA4-4D3E-969B-59D6204C769A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SE-Decide" ID="{379775A6-0FDE-4E9E-8757-6C56B9A47D5B}">
+									<Language>SFX</Language>
+									<AudioFile>SE-Decide.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="717478754"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SE-Decide" ID="{379775A6-0FDE-4E9E-8757-6C56B9A47D5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{14A90EBD-F7C9-4D8E-B870-5BB70B24AA6B}"/>
+					</PositioningInfo>
+				</ActorMixer>
+				<ActorMixer Name="BGM" ID="{09C5B85E-4947-48B0-9D94-67E49B7A1D31}" ShortID="985221048">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F4DE8CF-1EA4-4D3E-969B-59D6204C769A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="BGM" ID="{B9EA5F72-B36C-4331-A6CD-C3A02BE8C85C}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BGM_SpaceWould" ID="{696149B7-7AA3-46A8-935A-36D25C63DA4E}" ShortID="475541208">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F4DE8CF-1EA4-4D3E-969B-59D6204C769A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BGM-SpaceWould" ID="{F90ABB19-F911-437F-A308-33E4B894E865}">
+									<Language>SFX</Language>
+									<AudioFile>BGM-SpaceWould.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="712370670"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BGM-SpaceWould" ID="{F90ABB19-F911-437F-A308-33E4B894E865}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BGM_ShotThunder" ID="{81FC7284-BF08-4A12-B9FA-923BA282EAB5}" ShortID="766151180">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F4DE8CF-1EA4-4D3E-969B-59D6204C769A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BGM-ShotThunder" ID="{1642BFC3-5446-4193-A9AD-2AFEA4997AFC}">
+									<Language>SFX</Language>
+									<AudioFile>BGM-ShotThunder.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="196837429"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BGM-ShotThunder" ID="{1642BFC3-5446-4193-A9AD-2AFEA4997AFC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

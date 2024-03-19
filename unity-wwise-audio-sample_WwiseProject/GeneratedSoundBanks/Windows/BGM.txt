@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2015886054	BGM_AtomChain			\Default Work Unit\BGM_AtomChain	
+	2557289638	BGM_SpaceWorld			\Default Work Unit\BGM_SpaceWorld	
+	3249442774	BGM_ShotThunder			\Default Work Unit\BGM_ShotThunder	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2015886054	BGM_AtomChain			\Default Work Unit\BGM_AtomChain	
+
+State	ID	Name	State Group			Notes
+	748895195	None	BGM_AtomChain			
+	2962600625	BGM_AtomChain_Intro	BGM_AtomChain			
+	4263672370	BGM_AtomChain_Main	BGM_AtomChain			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2937832959	Battle			\Default Work Unit\Battle	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	81261858	BGM_AtomChain_Pad	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Windows\SFX\BGM_AtomChain_Pad_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_AtomChain_Switch\BGM_AtomChain_Main\BGM_AtomChain_MainLoop\BGM_AtomChain_Pad		8467360
+	196837429	BGM_ShotThunder	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Windows\SFX\BGM-ShotThunder_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\BGM_ShotThunder		3175360
+	428753622	BGM_AtomChain_Back	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Windows\SFX\BGM_AtomChain_Back_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_AtomChain_Switch\BGM_AtomChain_Intro\BGM_AtomChain_IntroLoop\BGM_AtomChain_Back		8467360
+	610408853	BGM_AtomChain_Catting	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Windows\SFX\BGM_AtomChain_Catting_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_AtomChain_Switch\BGM_AtomChain_Main\BGM_AtomChain_MainLoop\BGM_AtomChain_Catting		8467360
+	712370670	BGM_SpaceWould	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Windows\SFX\BGM-SpaceWould_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\BGM_SpaceWould		1302804
+

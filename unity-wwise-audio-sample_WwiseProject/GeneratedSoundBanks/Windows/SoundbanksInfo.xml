@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="412724365" Type="User" Language="SFX" Hash="{CF6A51C0-F7C7-BA44-7EFD-D9760EA22D9D}">
+			<ShortName>BGM</ShortName>
+			<Path>BGM.bnk</Path>
+			<Media>
+				<File Id="81261858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM_AtomChain_Pad.wav</ShortName>
+					<CachePath>SFX/BGM_AtomChain_Pad_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="196837429" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM-ShotThunder.wav</ShortName>
+					<CachePath>SFX/BGM-ShotThunder_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="428753622" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM_AtomChain_Back.wav</ShortName>
+					<CachePath>SFX/BGM_AtomChain_Back_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="610408853" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM_AtomChain_Catting.wav</ShortName>
+					<CachePath>SFX/BGM_AtomChain_Catting_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="712370670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM-SpaceWould.wav</ShortName>
+					<CachePath>SFX/BGM-SpaceWould_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2015886054" Name="BGM_AtomChain" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2015886054" Id="0"/>
+							<MediaRefs>
+								<MediaRef Id="428753622"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2015886054" Id="2962600625"/>
+							<MediaRefs>
+								<MediaRef Id="428753622"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2015886054" Id="4263672370"/>
+							<MediaRefs>
+								<MediaRef Id="81261858"/>
+								<MediaRef Id="428753622"/>
+								<MediaRef Id="610408853"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3249442774" Name="BGM_ShotThunder" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="196837429"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2557289638" Name="BGM_SpaceWorld" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="712370670"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="2937832959" Name="Battle"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2015886054" Name="BGM_AtomChain">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2962600625" Name="BGM_AtomChain_Intro"/>
+						<State Id="4263672370" Name="BGM_AtomChain_Main"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A4FF66A3-2886-FDE4-EB42-1F1B2C1DDD12}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="549376226" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+					<Plugin Id="905219516" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="412724365" Name="BGM">
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="1517463400" Name="Distortion"/>
+					</AuxBusRefs>
+				</Bus>
+				<Bus Id="1584861537" Name="SE">
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="1517463400" Name="Distortion"/>
+					</AuxBusRefs>
+				</Bus>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1517463400" Name="Distortion">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="549376226"/>
+							<PluginRef Id="905219516"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="33086948" Name="BGM_Reverb"/>
+				<GameParameter Id="2603995565" Name="BGM_Distortion"/>
+				<GameParameter Id="2813195569" Name="SE_Distortion"/>
+				<GameParameter Id="2937832959" Name="Battle"/>
+				<GameParameter Id="3495758272" Name="SE_Reverb"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2015886054" Name="BGM_AtomChain">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2962600625" Name="BGM_AtomChain_Intro"/>
+						<State Id="4263672370" Name="BGM_AtomChain_Main"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1465331116" Type="User" Language="SFX" Hash="{442F7ABC-2125-7347-9FE8-083FC15D236C}">
+			<ShortName>Global</ShortName>
+			<Path>Global.bnk</Path>
+			<Events>
+				<Event Id="3719051403" Name="Global_Pause_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="378413882" Name="Global_Resume_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1584861537" Type="User" Language="SFX" Hash="{BDB7BF26-9979-2604-F9A0-20FA965ED84C}">
+			<ShortName>SE</ShortName>
+			<Path>SE.bnk</Path>
+			<Media>
+				<File Id="702967015" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SE-Approach.wav</ShortName>
+					<CachePath>SFX/SE-Approach_818F3B66.wem</CachePath>
+				</File>
+				<File Id="717478754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SE-Decide.wav</ShortName>
+					<CachePath>SFX/SE-Decide_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3964740272" Name="SE_Attack" DurationType="OneShot" DurationMin="1.5825623" DurationMax="1.5825623">
+					<MediaRefs>
+						<MediaRef Id="717478754"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3846802891" Name="SE_Move" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="702967015"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C8961E67-15BF-A07C-0805-6359B49D40FC}</FileHash>
+</SoundBanksInfo>

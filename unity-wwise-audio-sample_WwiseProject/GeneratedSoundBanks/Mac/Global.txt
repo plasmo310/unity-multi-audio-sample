@@ -1,0 +1,4 @@
+Event	ID	Name			Wwise Object Path	Notes
+	378413882	Global_Resume_All			\Default Work Unit\Global_Resume_All	
+	3719051403	Global_Pause_All			\Default Work Unit\Global_Pause_All	
+

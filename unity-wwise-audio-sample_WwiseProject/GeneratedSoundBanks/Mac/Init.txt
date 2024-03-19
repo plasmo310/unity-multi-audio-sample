@@ -1,0 +1,33 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2015886054	BGM_AtomChain			\Default Work Unit\BGM_AtomChain	
+
+State	ID	Name	State Group			Notes
+	748895195	None	BGM_AtomChain			
+	2962600625	BGM_AtomChain_Intro	BGM_AtomChain			
+	4263672370	BGM_AtomChain_Main	BGM_AtomChain			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	33086948	BGM_Reverb			\Default Work Unit\BGM_Reverb	
+	2603995565	BGM_Distortion			\Default Work Unit\BGM_Distortion	
+	2813195569	SE_Distortion			\Default Work Unit\SE_Distortion	
+	3495758272	SE_Reverb			\Default Work Unit\SE_Reverb	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	412724365	BGM			\Default Work Unit\Master Audio Bus\BGM	
+	1584861537	SE			\Default Work Unit\Master Audio Bus\SE	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+	1517463400	Distortion			\Default Work Unit\Master Audio Bus\Distortion	
+
+Effect plug-ins	ID	Name	Type				Notes
+	549376226	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	602546716	Room_Large	Wwise RoomVerb			
+	905219516	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

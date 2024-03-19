@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
+      <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
+        <Orca OrcaName="DspBusSettings" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="DspBusSettings" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="DspBusSetting_0" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="DspBusSettings/DspBusSetting_0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Normal" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="DspBusSettings/DspBusSetting_0/Normal" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BGM_Reverb" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="DspBusSettings/DspBusSetting_0/BGM_Reverb" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BGM_Distortion" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="DspBusSettings/DspBusSetting_0/BGM_Distortion" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BusMap" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="BusMap" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BusMapforCue" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="BusMap/BusMapforCue" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Categories" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="SoundCategory" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories/SoundCategory" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="REACT" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="REACT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="VoiceLimitGroups" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="VoiceLimitGroups" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="AISAC-Controls" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="AISAC-Controls" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="SelectorFolder" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="MusicType" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder/MusicType" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BeatSyncLabelFolder" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="BeatSyncLabelFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      </Orca>
+      <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
+      <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

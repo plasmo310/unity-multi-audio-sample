@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="WorkUnit_0_MaterialInfo" FormatVersion="Ver.1.04.01" MaterialRootPath="Materials" VersionInfoV3="Ver.3.50.06" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoMaterialInfoFile">
+      <Orca OrcaName="MaterialRootFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformFolder">
+        <Orca OrcaName="BGM" EncodeType="HCA" HcaQuality="MidiumHiQuality" StreamType="Stream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder">
+          <Orca OrcaName="BGM_SpaceWould.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="217654" LocalFileLastSyncTime="2024/02/09 23:11:06" ReloopEnd="325661" ResamplingRate="44100" SampleFrames="325661" SamplingRate="44100" SourceFileMD5CacheString="cc2dcec1" SourceFileSize="1957750" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_ShotThunder.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="529328" LocalFileLastSyncTime="2024/02/09 23:11:06" ReloopEnd="793800" ResamplingRate="44100" SampleFrames="793800" SamplingRate="44100" SourceFileMD5CacheString="d7e13bf8" SourceFileSize="4770304" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_MogTheme.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="952950" LocalFileLastSyncTime="2024/02/09 23:11:06" LoopEnd="1428840" LoopStart="298496" LoopType="Loop" ReloopEnableFlag="True" ReloopEnd="1428840" ReloopStart="299880" ResamplingRate="44100" SampleFrames="1428840" SamplingRate="44100" SourceFileMD5CacheString="934012ba" SourceFileSize="8584408" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_OthelloBattle.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="434530" LocalFileLastSyncTime="2024/02/09 23:11:06" ReloopEnd="651323" ResamplingRate="44100" SampleFrames="651323" SamplingRate="44100" SourceFileMD5CacheString="7e9097b5" SourceFileSize="3914342" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_AtomChain.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="1410472" LocalFileLastSyncTime="2024/02/04 2:00:52" ReloopEnd="2116800" ResamplingRate="44100" SampleFrames="2116800" SamplingRate="44100" SourceFileSize="12718994" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_AtomChain_Back.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="1410472" LocalFileLastSyncTime="2024/02/09 23:11:05" ReloopEnd="2116800" ResamplingRate="44100" SampleFrames="2116800" SamplingRate="44100" SourceFileMD5CacheString="2474c5ff" SourceFileSize="12718994" StreamType="ZeroLatencyStream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_AtomChain_Catting.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="1410472" LocalFileLastSyncTime="2024/02/09 23:11:05" ReloopEnd="2116800" ResamplingRate="44100" SampleFrames="2116800" SamplingRate="44100" SourceFileMD5CacheString="b7fe3e9" SourceFileSize="12718994" StreamType="ZeroLatencyStream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_AtomChain_Pad.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="1410472" LocalFileLastSyncTime="2024/02/09 23:11:05" ReloopEnd="2116800" ResamplingRate="44100" SampleFrames="2116800" SamplingRate="44100" SourceFileMD5CacheString="bec18abc" SourceFileSize="12718994" StreamType="ZeroLatencyStream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+        </Orca>
+        <Orca OrcaName="SE" HcaQuality="MidiumLowQuality" StreamType="Memory" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder">
+          <Orca OrcaName="SE_Move.wav" Channels="2" EncodeFileSize="15100" LocalFileLastSyncTime="2024/02/09 23:11:07" ReloopEnd="44100" ResamplingRate="44100" SampleFrames="44100" SamplingRate="44100" SourceFileMD5CacheString="1d31652" SourceFileSize="176458" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="SE_Attack.wav" Channels="2" EncodeFileSize="23625" LocalFileLastSyncTime="2024/02/09 23:11:07" ReloopEnd="69791" ResamplingRate="44100" SampleFrames="69791" SamplingRate="44100" SourceFileMD5CacheString="b3b82c78" SourceFileSize="283260" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+        </Orca>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="WorkUnit_0" FormatVersion="Ver.1.08.00" UsedMaterialFlag="True" VersionInfoV3="Ver.3.50.06" WorkUnitPath="WorkUnits/WorkUnit_0/WorkUnit_0.atmcunit" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWorkUnit">
+      <Orca OrcaName="References" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReferenceFolder">
+        <Orca OrcaName="AISAC" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReferenceAisacFolder"/>
+      </Orca>
+      <Orca OrcaName="CueSheetFolder" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheetFolder">
+        <Orca OrcaName="WorkUnit_0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheetSubFolder">
+          <Orca OrcaName="BGM" AwbHash="27787" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_BGM" LastOutputCueSheetSize="9824" OoUniqId="8faf6538-84ee-4625-8b6d-ed533f2add08" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="BGM_SpaceWould" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_BGM" BusSendExUseFlag1="True" BusSendExUseFlag2="True" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/BGM" CueID="0" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_BGM_SpaceWould" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_SpaceWould.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_SpaceWould.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BGM_ShotThunder" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_BGM" BusSendExUseFlag1="True" BusSendExUseFlag2="True" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/BGM" CueID="1" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_BGM_ShotThunder" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_ShotThunder.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_ShotThunder.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BGM_MogTheme" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_BGM" BusSendExUseFlag1="True" BusSendExUseFlag2="True" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/BGM" CueID="2" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_BGM_MogTheme" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_MogTheme.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_MogTheme.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BGM_OthelloBattle" CueID="4" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_BGM_OthelloBattle" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_OthelloBattle.wav" AutoRepeatInterval="14769" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_OthelloBattle.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+                <Orca OrcaName="OthelloBattle" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/Battle" DefaultControlValue="1" DefaultControlValueFlag="True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
+                  <Orca OrcaName="Volume" ControlDestinationType="Volume" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
+                    <Orca OrcaName="Point" ControlValue="0" DestinationValue="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_2" ControlValue="0.299" DestinationValue="0.0561" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_1" ControlValue="0.803" CurveType="SlowStartRapidEnd" DestinationValue="0.4796" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                  </Orca>
+                </Orca>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BGM_OthelloBattle_Block" CueID="5" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_BGM_OthelloBattle" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_OthelloBattle.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_OthelloBattle.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_OthelloBattle.wav_Trimmer" TrimmingEndPosition="7400.8321149423" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                  <Orca OrcaName="BGM_OthelloBattle.wav_Fade" FadeOutTime="19.2036096713282" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformFade"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Block_BGM_OthelloBattle_Block" BlockEndPositionMs="7400" BlockPlaybackLoopNum="999" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBlock"/>
+              <Orca OrcaName="Block_BGM_OthelloBattle_Block_0" BlockEndPositionMs="7400" BlockTransitionDestinationType="NextBlock" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBlock"/>
+              <Orca OrcaName="Track_BGM_OthelloBattle_0" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_OthelloBattle.wav" DelayTimeMS="7400.8321" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_OthelloBattle.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_OthelloBattle.wav_Trimmer" TrimmingEndPosition="14769.229" TrimmingStartPosition="7391.78691209957" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                  <Orca OrcaName="BGM_OthelloBattle.wav_Fade" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformFade"/>
+                </Orca>
+              </Orca>
+            </Orca>
+          </Orca>
+          <Orca OrcaName="BGM_Block" AwbHash="48905" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_BGM" LastOutputCueSheetSize="10432" OoUniqId="b87b100a-e458-4c12-b052-391b4ea42260" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="BGM_AtomChain" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/BGM" CueID="6" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Block_BGM_AtomChain_Intro" BlockEndPositionMs="5543.2307" BlockTransitionDestinationType="NextBlock" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBlock"/>
+              <Orca OrcaName="Block_BGM_AtomChain__IntroLoop" BlockEndPositionMs="1846.1539" BlockPlaybackLoopNum="-1" BlockTransitionMode="Relative" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBlock"/>
+              <Orca OrcaName="Block_BGM_AtomChain_Main" BlockEndPositionMs="1846.1538" BlockTransitionDestinationType="NextBlock" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBlock"/>
+              <Orca OrcaName="Block_BGM_AtomChain_MainLoop" BlockEndPositionMs="36923.0769" BlockPlaybackLoopNum="-1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBlock"/>
+              <Orca OrcaName="Track_Back" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_AtomChain_Back.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Back.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Back.wav_Trimmer" TrimmingEndPosition="5543.23073076923" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+                <Orca OrcaName="BGM_AtomChain_Back.wav_2" DelayTimeMS="9235.5384" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Back.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Back.wav_2_Trimmer" TrimmingEndPosition="48000" TrimmingStartPosition="11076.9230769231" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+                <Orca OrcaName="Aisac_AtomChain_Back" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/Battle" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
+                  <Orca OrcaName="Volume" ControlDestinationType="Volume" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
+                    <Orca OrcaName="Point" ControlValue="0" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_1" ControlValue="0.699" CurveType="SlowStartRapidEnd" DestinationValue="1.1512" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="1.2506" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                  </Orca>
+                </Orca>
+                <Orca OrcaName="BGM_AtomChain_Back.wav_3" DelayTimeMS="7389.3846" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Back.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Back.wav_3_Trimmer" TrimmingEndPosition="11076.9230769231" TrimmingStartPosition="9230.76923076923" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+                <Orca OrcaName="BGM_AtomChain_Back.wav_1" DelayTimeMS="5543.2307" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Back.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Back.wav_1_Trimmer" TrimmingEndPosition="7384.61538461538" TrimmingStartPosition="5538.46157692308" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Track_Pad" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_AtomChain_Pad.wav_1" DelayTimeMS="9235.5384" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Pad.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Pad.wav_1_Trimmer" TrimmingEndPosition="48000" TrimmingStartPosition="11076.9230769231" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+                <Orca OrcaName="Aisac_AtomChain_Pad" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/Battle" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
+                  <Orca OrcaName="Volume" ControlDestinationType="Volume" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
+                    <Orca OrcaName="Point" ControlValue="0" DestinationValue="1.0011" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_1" ControlValue="0.196" CurveType="RapidStartSlowEnd" DestinationValue="0.8488" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="1.0158" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                  </Orca>
+                </Orca>
+                <Orca OrcaName="BGM_AtomChain_Pad.wav_2" DelayTimeMS="7389.3846" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Pad.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Pad.wav_2_Trimmer" TrimmingEndPosition="11076.9230769231" TrimmingStartPosition="9230.76923076923" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Track_Catting" Height="74" ObjectColor="200, 40, 120, 200" Pan3dAngle="10" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="BGM_AtomChain_Catting.wav_2" DelayTimeMS="9235.5384" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/BGM/BGM_AtomChain_Catting.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="BGM_AtomChain_Catting.wav_2_Trimmer" TrimmingEndPosition="48000" TrimmingStartPosition="11076.9230769231" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+                <Orca OrcaName="Aisac_AtomChain_Catting" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/Battle" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
+                  <Orca OrcaName="Volume" ControlDestinationType="Volume" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
+                    <Orca OrcaName="Point" ControlValue="0" DestinationValue="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_1" ControlValue="0.104" CurveType="RapidStartSlowEnd" DestinationValue="0.6591" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_2" ControlValue="0.496" DestinationValue="0.754" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                    <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="0.9074" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+                  </Orca>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Callback" CallbackTag="StartAtomChainMainLoop" EventEnableFlag="True" EventEndTime="0" EventStartTime="9240" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoEventCallback"/>
+              <Orca OrcaName="BeatSyncTrack" TargetLabel="/CriAtomCraftV2Root/GlobalSettings/BeatSyncLabelFolder/AtomChainBeatSyncLabel" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBeatSyncTrack">
+                <Orca OrcaName="AtomChainBeatSync" BeatListStr="11111111111111111111111111111111" Bpm="130" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBeatSyncParam"/>
+              </Orca>
+            </Orca>
+          </Orca>
+          <Orca OrcaName="SE" AwbHash="30163" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_SE" LastOutputCueSheetSize="43904" OoUniqId="7b060d68-08b8-4ed1-b8e3-7a503b818ba3" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="SE_Move" BusSendExUseFlag1="True" BusSendExUseFlag2="True" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/SE" CueID="0" PanType="Auto" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_SE_Move" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="SE_Move.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/SE/SE_Move.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="SE_Attack" BusSendExUseFlag1="True" BusSendExUseFlag2="True" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/SE" CueID="1" PanType="Auto" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_SE_Decide" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="SE_Attack.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/SE/SE_Attack.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="SE_Random" BusSendExUseFlag1="True" BusSendExUseFlag2="True" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/SoundCategory/SE" CueID="2" PanType="Auto" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_SE_Move" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="SE_Move.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/SE/SE_Move.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_SE_Attack" Height="74" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="SE_Attack.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/WorkUnit_0_MaterialInfo/MaterialRootFolder/SE/SE_Attack.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+          </Orca>
+        </Orca>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

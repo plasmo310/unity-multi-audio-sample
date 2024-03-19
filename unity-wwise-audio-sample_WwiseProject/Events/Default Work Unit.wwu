@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4C39F7F1-BE00-4596-B8C5-9B344976E367}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{4C39F7F1-BE00-4596-B8C5-9B344976E367}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="BGM_SpaceWorld" ID="{E4AE8483-47CA-4FB4-842E-577A27A2A9B0}">
+					<ChildrenList>
+						<Action Name="" ID="{3B929BE1-629C-4339-ADAD-6BB1A4146386}" ShortID="666797073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM_SpaceWould" ID="{696149B7-7AA3-46A8-935A-36D25C63DA4E}" WorkUnitID="{B7001C1F-5550-4AAB-9648-16CCDD1874D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_ShotThunder" ID="{FEA986ED-8AF6-46F0-84FD-34EB3B6010B1}">
+					<ChildrenList>
+						<Action Name="" ID="{CE5CEFC1-3221-4FE5-A794-985750F93CAD}" ShortID="571706312">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM_ShotThunder" ID="{81FC7284-BF08-4A12-B9FA-923BA282EAB5}" WorkUnitID="{B7001C1F-5550-4AAB-9648-16CCDD1874D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SE_Attack" ID="{FBBB3CAB-5A8A-45B8-BDCB-7F315DE5C14A}">
+					<ChildrenList>
+						<Action Name="" ID="{6457F02A-8018-4659-AAB4-940CB2F45C87}" ShortID="400279106">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SE_Attack" ID="{3472D25A-24D0-4BD1-A453-40C0F4C82682}" WorkUnitID="{B7001C1F-5550-4AAB-9648-16CCDD1874D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SE_Move" ID="{37BFF1B6-5F72-4BEB-84BB-3DC4D83F1A43}">
+					<ChildrenList>
+						<Action Name="" ID="{E5EBCAFC-F7F3-469E-9E7F-EB3FB09977FF}" ShortID="1001255978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SE_Move" ID="{BA6DCC2C-214B-4D68-BA89-E930331ACBEC}" WorkUnitID="{B7001C1F-5550-4AAB-9648-16CCDD1874D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Global_Pause_All" ID="{60886688-CF05-4EAF-8890-E55E66DCE1DF}">
+					<ChildrenList>
+						<Action Name="" ID="{A3638028-3BAD-4AC3-B419-B05BBFC42957}" ShortID="875127306">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Global_Resume_All" ID="{56C5984B-DD0D-4C81-8A91-9D362811756B}">
+					<ChildrenList>
+						<Action Name="" ID="{8C0D29F5-608B-4463-9914-AD0C860898D6}" ShortID="38283361">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_AtomChain" ID="{42CF81E6-380D-447B-B454-C2C3A49CA644}">
+					<ChildrenList>
+						<Action Name="" ID="{73E32913-378A-400C-AF85-19F921913766}" ShortID="166857075">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM_AtomChain_Switch" ID="{EEB62464-2777-4134-8118-0E4305892459}" WorkUnitID="{A804E742-B9D7-4BC4-8D2E-4C14E757932A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

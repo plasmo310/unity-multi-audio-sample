@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}" SchemaVersion="119">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{32BF36F0-9325-4839-A51A-F0456CA5275D}" WorkUnitID="{7F662961-2459-4F0C-99D8-B0E69B4A5798}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="BGM" ID="{B9EA5F72-B36C-4331-A6CD-C3A02BE8C85C}">
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{3BB08ACA-C569-4B4E-8234-10762A96B6AC}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Distortion" ID="{067054B3-862C-4087-9CA3-6E45DF99C474}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{DB2582B8-9352-4DB9-BF76-0F871DB34216}" ShortID="1060006016">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="UserAuxSendVolume0"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="BGM_Reverb" ID="{1613DD43-C9D6-49ED-B746-55D515B5B81C}" WorkUnitID="{0E163F0A-FF5B-44C7-A7A5-EF1FA9DDC0EF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{5D156BD1-2E46-4B7C-B3B1-97E4FA420FFB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{4ABE3359-9A60-4115-8A8E-FF9063CA98F1}" ShortID="35153131">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="UserAuxSendVolume1"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="BGM_Distortion" ID="{F3D6708E-D658-4EFA-A5E8-385CD8AE9023}" WorkUnitID="{0E163F0A-FF5B-44C7-A7A5-EF1FA9DDC0EF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{50731F2F-2873-4938-AF5F-DF0286B64B61}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>12</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="SE" ID="{50DB5A26-6D6E-42AB-9FE2-E8CDE0F1E59E}">
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{3BB08ACA-C569-4B4E-8234-10762A96B6AC}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Distortion" ID="{067054B3-862C-4087-9CA3-6E45DF99C474}" WorkUnitID="{5B155EBF-8D76-444C-8A0A-66EA98D83268}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{68DF390F-A4D6-4C4D-ABE5-83DE6D27B243}" ShortID="798352742">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="UserAuxSendVolume0"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="SE_Reverb" ID="{C192E0F8-B817-46ED-89E9-805683BFF162}" WorkUnitID="{0E163F0A-FF5B-44C7-A7A5-EF1FA9DDC0EF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{300CE38F-26A6-4A44-A723-4188E9412666}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{82CF81B2-F1B8-4366-AC57-37BBE9F5D351}" ShortID="225327621">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="UserAuxSendVolume1"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="SE_Distortion" ID="{3A278E53-CCF8-4E37-B80D-F63AC836A021}" WorkUnitID="{0E163F0A-FF5B-44C7-A7A5-EF1FA9DDC0EF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{3F7D66C7-0385-4F2E-8312-606318ED687C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>12</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<AuxBus Name="Reverb" ID="{3BB08ACA-C569-4B4E-8234-10762A96B6AC}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{195738FF-4BB7-4DF0-BFA7-2F33BEAE1DCE}" ShortID="229390805">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Distortion" ID="{067054B3-862C-4087-9CA3-6E45DF99C474}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{1DE3DC21-646F-48E0-94F0-A4E442027319}" ShortID="177752992">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{365AC571-58B0-4339-8215-F8F6441BB1C7}" ShortID="721871341">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{B9A72180-E111-4B10-B56C-10D406F5881B}" ShortID="905219516" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+																	<Property Name="DistortionType" Type="int32" Value="1"/>
+																	<Property Name="OutputLevel" Type="Real32" Value="-5"/>
+																	<Property Name="PostEQBand1Enable" Type="bool" Value="True"/>
+																	<Property Name="PostEQBand1FilterType" Type="int32" Value="5"/>
+																	<Property Name="PostEQBand1Frequency" Type="Real32" Value="2200"/>
+																	<Property Name="PostEQBand1Gain" Type="Real32" Value="8"/>
+																	<Property Name="PostEQBand1QFactor" Type="Real32" Value="10"/>
+																	<Property Name="PostEQBand2FilterType" Type="int32" Value="5"/>
+																	<Property Name="PostEQBand2Frequency" Type="Real32" Value="5000"/>
+																	<Property Name="PostEQBand2QFactor" Type="Real32" Value="10"/>
+																	<Property Name="PreEQBand1FilterType" Type="int32" Value="5"/>
+																	<Property Name="PreEQBand1Frequency" Type="Real32" Value="2200"/>
+																	<Property Name="PreEQBand1QFactor" Type="Real32" Value="10"/>
+																	<Property Name="PreEQBand2FilterType" Type="int32" Value="1"/>
+																	<Property Name="PreEQBand2Frequency" Type="Real32" Value="3656"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="85"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{B27CE53F-26B5-4C1A-96D6-FA9E671896C1}" ShortID="284523519">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{A9F2B6C7-F134-4101-AA67-BED7D44ECAD1}" ShortID="549376226" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="90"/>
+																	<Property Name="DistortionType" Type="int32" Value="1"/>
+																	<Property Name="OutputLevel" Type="Real32" Value="-5"/>
+																	<Property Name="PostEQBand1Enable" Type="bool" Value="True"/>
+																	<Property Name="PostEQBand1FilterType" Type="int32" Value="5"/>
+																	<Property Name="PostEQBand1Frequency" Type="Real32" Value="5000"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="85"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

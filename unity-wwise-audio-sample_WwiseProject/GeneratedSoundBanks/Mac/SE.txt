@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3846802891	SE_Move			\Default Work Unit\SE_Move	
+	3964740272	SE_Attack			\Default Work Unit\SE_Attack	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	702967015	SE_Move	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Mac\SFX\SE-Approach_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\SE_Move		176496
+	717478754	SE_Attack	C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\.cache\Mac\SFX\SE-Decide_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\SE_Attack		279260
+

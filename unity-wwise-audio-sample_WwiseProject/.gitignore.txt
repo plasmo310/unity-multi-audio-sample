@@ -1,0 +1,6 @@
+# project stuff
+.cache/
+*.prof
+*_WwiseProject.*.validationcache
+*_WwiseProject.*.wsettings
+**/*.akd
