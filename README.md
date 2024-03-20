@@ -45,38 +45,38 @@
 ##### 全体構成
 | フォルダパス | 概要 |
 | -- | -- |
-| Assets/AudioLib | 各オーディオライブラリの処理を実行する処理 |
-| Assets/GameSample | サンプルゲームに関連する処理 |
-| CriAtomCraftProject | CriAtomCraftプロジェクト |
-| WwiseProject | Wwiseプロジェクト |
+| <a href="Assets/AudioLib">Assets/AudioLib</a> | 各オーディオライブラリの処理を実行する処理 |
+| <a href="Assets/GameSample">Assets/GameSample</a> | サンプルゲームに関連する処理 |
+| <a href="MW_CriAtomCraftProject">MW_CriAtomCraftProject</a> | CriAtomCraftプロジェクト |
+| <a href="MW_WwiseProject">MW_WwiseProject</a> | Wwiseプロジェクト |
 
 ##### UnityAudio関連
 | フォルダパス | 概要 |
 | -- | -- |
-| Assets/AudioLib/UnityAudio | APIを実行する処理 |
-| Assets/GameSample/Runtime/Audio/UnityAudio | サンプルゲーム固有のオーディオ関連処理 |
-| Assets/GameSample/Resouces/UnityAudio | UnityAudioで実行するためのサウンドデータ |
+| <a href="Assets/AudioLib/UnityAudio">Assets/AudioLib/UnityAudio</a> | APIを実行する処理 |
+| <a href="Assets/GameSample/Runtime/Audio/UnityAudio">Assets/GameSample/Runtime/Audio/UnityAudio</a> | サンプルゲーム固有のオーディオ関連処理 |
+| <a href="Assets/GameSample/Resources/UnityAudio">Assets/GameSample/Resources/UnityAudio</a> | UnityAudioで実行するためのサウンドデータ |
 
 ##### CRI ADX関連
 | フォルダパス | 概要 |
 | -- | -- |
-| Assets/AudioLib/CriAdx | APIを実行する処理 |
-| Assets/GameSample/Runtime/Audio/CriAdx | サンプルゲーム固有のオーディオ関連処理 |
-| StreamingAssets/Audio/CriAdx | CriAtomCraftプロジェクトから出力したサウンドデータ |
+| <a href="Assets/AudioLib/CriAdx">Assets/AudioLib/CriAdx</a> | APIを実行する処理 |
+| <a href="Assets/GameSample/Runtime/Audio/CriAdx">Assets/GameSample/Runtime/Audio/CriAdx</a> | サンプルゲーム固有のオーディオ関連処理 |
+| <a href="Assets/StreamingAssets/Audio/CriAdx">Assets/StreamingAssets/Audio/CriAdx</a> | CriAtomCraftプロジェクトから出力したサウンドデータ |
 
 ##### Wwise関連
 | フォルダパス | 概要 |
 | -- | -- |
-| Assets/AudioLib/Wwise | APIを実行する処理 |
-| Assets/GameSample/Runtime/Audio/Wwise | サンプルゲーム固有のオーディオ関連処理 |
-| StreamingAssets/Audio/Wwise | Wwiseプロジェクトから出力したサウンドデータ |
+| <a href="Assets/AudioLib/Wwise">Assets/AudioLib/Wwise</a> | APIを実行する処理 |
+| <a href="Assets/GameSample/Runtime/Audio/Wwise">Assets/GameSample/Runtime/Audio/Wwise</a> | サンプルゲーム固有のオーディオ関連処理 |
+| <a href="Assets/StreamingAssets/Audio/Wwise">Assets/StreamingAssets/Audio/Wwise</a> | Wwiseプロジェクトから出力したサウンドデータ |
 
 ### 設計について
 * パッケージ構成
   * <a href="Assets/GameSample">Assets/GameSample</a>配下にサンプルシーン関連の処理、<br><a href="Assets/AudioLib">Assets/AudioLib</a>配下に各APIへアクセスするための処理をそれぞれ格納しています。<br>
     <img width=280 src="/ReadMeContents/uml_package.png">
 * クラス図(関連処理)
-  * <code>GameSample.Audio</code>内ではゲーム固有のオーディオ関連の処理を実装し、<br>各オーディオライブラリへのアクセスは<code>AudioLib</code>配下の各サービスから行うようにしています。<br>
+  * <code>GameSample.Audio</code>配下でゲーム固有のオーディオ関連の処理を実装し、<br>各オーディオライブラリへのアクセスは<code>AudioLib</code>配下の各サービスから行うようにしています。<br>
     <img width=800 src="/ReadMeContents/uml_class.png">
   * ゲーム側からは<code>ServiceLocator</code>を通じて、<code>IGameAudioService</code>、<code>IGameAudioSettings</code>に対してオーディオ関連の処理を実行しています。
     ```
@@ -114,5 +114,3 @@
                 GameAudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmSpaceWould);
             }
     ```
-
-TODO
