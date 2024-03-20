@@ -1,17 +1,23 @@
 @startuml MultiAudio
 
 package AudioLib {
-    interface IUnityAudioApiService {
+    package UnityAudio {
+        interface IUnityAudioApiService {
+        }
+        class UnityAudioApiService {
+        }
     }
-    class UnityAudioApiService {
+    package CriAdx {
+        interface ICriAdxApiService {
+        }
+        class CriAdxApiService {
+        }
     }
-    interface ICriAdxApiService {
-    }
-    class CriAdxApiService {
-    }
-    interface IWwiseApiService {
-    }
-    class WwiseApiService {
+    package Wwise {
+        interface IWwiseApiService {
+        }
+        class WwiseApiService {
+        }
     }
 }
 
@@ -45,6 +51,10 @@ package GameSample
     }
 }
 
+package CriMw.CriWare {
+}
+package AK.Wwise {
+}
 
 
 IUnityAudioApiService <|-- UnityAudioApiService
@@ -74,5 +84,8 @@ Managers --> IGameAudioSettings
 Managers --> IGameAudioService
 Objects --> IGameAudioSettings
 Objects --> IGameAudioService
+
+CriAdxApiService --> CriMw.CriWare
+WwiseApiService --> AK.Wwise
 
 @enduml
