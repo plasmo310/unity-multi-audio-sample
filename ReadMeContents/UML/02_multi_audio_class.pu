@@ -1,0 +1,78 @@
+@startuml MultiAudio
+
+package AudioLib {
+    interface IUnityAudioApiService {
+    }
+    class UnityAudioApiService {
+    }
+    interface ICriAdxApiService {
+    }
+    class CriAdxApiService {
+    }
+    interface IWwiseApiService {
+    }
+    class WwiseApiService {
+    }
+}
+
+package GameSample
+{
+    package Audio {
+        interface IGameAudioService {
+        }
+        class GameUnityAudioService {
+        }
+        class GameCriAdxAudioService {
+        }
+        class GameWwiseAudioService {
+        }
+        interface IGameAudioSettings {
+        }
+        class GameUnityAudioSettings {
+        }
+        class GameCriAdxAudioSettings {
+        }
+        class GameWwiseAudioSettings {
+        }
+    }
+    package Managers {
+    }
+    package Objects {
+    }
+    package Common {
+        class ServiceLocator {
+        }
+    }
+}
+
+
+
+IUnityAudioApiService <|-- UnityAudioApiService
+ICriAdxApiService     <|-- CriAdxApiService
+IWwiseApiService      <|-- WwiseApiService
+
+IGameAudioService <|-- GameUnityAudioService
+IGameAudioService <|-- GameCriAdxAudioService
+IGameAudioService <|-- GameWwiseAudioService
+
+GameUnityAudioSettings  --|> IGameAudioSettings
+GameCriAdxAudioSettings --|> IGameAudioSettings
+GameWwiseAudioSettings  --|> IGameAudioSettings
+
+GameUnityAudioService  --> GameUnityAudioSettings
+GameCriAdxAudioService --> GameCriAdxAudioSettings
+GameWwiseAudioService  --> GameWwiseAudioSettings
+
+GameUnityAudioService  --> IUnityAudioApiService
+GameCriAdxAudioService --> ICriAdxApiService
+GameWwiseAudioService  --> IWwiseApiService
+
+Managers --> ServiceLocator
+Objects --> ServiceLocator
+
+Managers --> IGameAudioSettings
+Managers --> IGameAudioService
+Objects --> IGameAudioSettings
+Objects --> IGameAudioService
+
+@enduml
