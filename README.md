@@ -71,11 +71,11 @@
 | <a href="Assets/GameSample/Runtime/Audio/Wwise">Assets/GameSample/Runtime/Audio/Wwise</a> | サンプルゲーム固有のオーディオ関連処理 |
 | <a href="Assets/StreamingAssets/Audio/Wwise">Assets/StreamingAssets/Audio/Wwise</a> | Wwiseプロジェクトから出力したサウンドデータ |
 
-### 設計について
+### オーディオ関連処理の設計について
 * パッケージ構成
   * <a href="Assets/GameSample">Assets/GameSample</a>配下にサンプルシーン関連の処理、<br><a href="Assets/AudioLib">Assets/AudioLib</a>配下に各APIへアクセスするための処理をそれぞれ格納しています。<br>
     <img width=280 src="/ReadMeContents/uml_package.png">
-* クラス図(関連処理)
+* クラス図
   * <code>GameSample.Audio</code>配下でゲーム固有のオーディオ関連の処理を実装し、<br>各オーディオライブラリへのアクセスは<code>AudioLib</code>配下の各サービスから行うようにしています。<br>
     <img width=800 src="/ReadMeContents/uml_class.png">
   * ゲーム側からは<code>ServiceLocator</code>を通じて、<code>IGameAudioService</code>、<code>IGameAudioSettings</code>に対してオーディオ関連の処理を実行しています。
