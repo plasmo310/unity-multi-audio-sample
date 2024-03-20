@@ -49,7 +49,7 @@ namespace GameSample.Managers
         /// <summary>
         /// Audioサービス
         /// </summary>
-        private IGameAudioService AudioService => ServiceLocator.Resolve<IGameAudioService>();
+        private IGameAudioService GameAudioService => ServiceLocator.Resolve<IGameAudioService>();
         private IGameAudioSettings GameAudioSettings => ServiceLocator.Resolve<IGameAudioSettings>();
 
         private void Start()
@@ -59,7 +59,7 @@ namespace GameSample.Managers
 
             // BGMを再生
             var eventName = GameAudioSettings.SoundEventName_BgmAtomChain;
-            AudioService.PlaySoundEvent(eventName, new IGameAudioService.SoundPlayOption()
+            GameAudioService.PlaySoundEvent(eventName, new IGameAudioService.SoundPlayOption()
             {
                 // コールバックを登録
                 BeatSyncCallback = OnBeatSync,
@@ -86,7 +86,7 @@ namespace GameSample.Managers
 
 #region テキスト表示関連
 
-        // 雑なコード...ごめんなさい...
+        // 雑なコードです...
 
         /// <summary>
         /// テキスト配列
@@ -187,8 +187,8 @@ namespace GameSample.Managers
         private void OnInitializeInteractive()
         {
             // State、GameParameterを初期化
-            AudioService.SetNextBlockState(IGameAudioService.NextBlockState.BgmAtomChainIntro);
-            AudioService.SetGameParameter(GameAudioSettings.SoundEventName_BgmAtomChain, GameAudioSettings.GameParameterName_Battle, 0f);
+            GameAudioService.SetNextBlockState(IGameAudioService.NextBlockState.BgmAtomChainIntro);
+            GameAudioService.SetGameParameter(GameAudioSettings.SoundEventName_BgmAtomChain, GameAudioSettings.GameParameterName_Battle, 0f);
         }
 
         /// <summary>
@@ -221,7 +221,7 @@ namespace GameSample.Managers
             if (_player.IsMoved)
             {
                 _isChangedMainBlock = true;
-                AudioService.SetNextBlockState(IGameAudioService.NextBlockState.BgmAtomChainMain);
+                GameAudioService.SetNextBlockState(IGameAudioService.NextBlockState.BgmAtomChainMain);
             }
         }
 
@@ -237,7 +237,7 @@ namespace GameSample.Managers
             {
                 parameterValue = (_battleAreaDistance - targetDistance) / _battleAreaDistance;
             }
-            AudioService.SetGameParameter(GameAudioSettings.SoundEventName_BgmAtomChain, GameAudioSettings.GameParameterName_Battle, parameterValue);
+            GameAudioService.SetGameParameter(GameAudioSettings.SoundEventName_BgmAtomChain, GameAudioSettings.GameParameterName_Battle, parameterValue);
         }
 
 #endregion
@@ -389,8 +389,8 @@ namespace GameSample.Managers
         /// </summary>
         [SerializeField] private List<SpectrumVisualizer> _lineSpectrumVisualizerList;
 
-        private Func<int, bool> CreateSpectrumAnalyzer => (resolution) => AudioService.SetSpectrumAnalyzer(GameAudioSettings.SoundEventName_BgmAtomChain, resolution);
-        private Func<int, bool, float[]> GetSpectrumData => (resolution, isConvertDecibel) => AudioService.GetSpectrumData(resolution, isConvertDecibel);
+        private Func<int, bool> CreateSpectrumAnalyzer => (resolution) => GameAudioService.SetSpectrumAnalyzer(GameAudioSettings.SoundEventName_BgmAtomChain, resolution);
+        private Func<int, bool, float[]> GetSpectrumData => (resolution, isConvertDecibel) => GameAudioService.GetSpectrumData(resolution, isConvertDecibel);
 
         /// <summary>
         /// オーディオスペクトラム初期化

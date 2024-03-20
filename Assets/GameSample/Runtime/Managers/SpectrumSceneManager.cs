@@ -27,8 +27,6 @@ namespace GameSample.Managers
         [SerializeField] private SpectrumVisualizer _lineSpectrumVisualizer;
         [SerializeField] private SpectrumVisualizer _cubeSpectrumVisualizer;
 
-        private IGameAudioSettings GameAudioSettings => ServiceLocator.Resolve<IGameAudioSettings>();
-
         private enum SpectrumType
         {
             None,
@@ -36,10 +34,11 @@ namespace GameSample.Managers
             Cube,
         }
 
-        private IGameAudioService AudioService => ServiceLocator.Resolve<IGameAudioService>();
+        private IGameAudioService GameAudioService => ServiceLocator.Resolve<IGameAudioService>();
+        private IGameAudioSettings GameAudioSettings => ServiceLocator.Resolve<IGameAudioSettings>();
 
-        private Func<int, bool> CreateSpectrumAnalyzer => (resolution) => AudioService.SetSpectrumAnalyzer(GameAudioSettings.SoundEventName_BgmSpaceWould, resolution);
-        private Func<int, bool, float[]> GetSpectrumData => (resolution, isConvertDecibel) => AudioService.GetSpectrumData(resolution, isConvertDecibel);
+        private Func<int, bool> CreateSpectrumAnalyzer => (resolution) => GameAudioService.SetSpectrumAnalyzer(GameAudioSettings.SoundEventName_BgmSpaceWould, resolution);
+        private Func<int, bool, float[]> GetSpectrumData => (resolution, isConvertDecibel) => GameAudioService.GetSpectrumData(resolution, isConvertDecibel);
 
         private bool _isInitialized = false;
 
@@ -72,19 +71,19 @@ namespace GameSample.Managers
 
         private void StopBgm()
         {
-            AudioService.StopAllBgm();
+            GameAudioService.StopAllBgm();
         }
 
         private void PlayBgm01()
         {
             var eventName = GameAudioSettings.SoundEventName_BgmSpaceWould;
-            AudioService.PlaySoundEvent(eventName);
+            GameAudioService.PlaySoundEvent(eventName);
         }
 
         private void PlayBgm02()
         {
             var eventName = GameAudioSettings.SoundEventName_BgmShotThunder;
-            AudioService.PlaySoundEvent(eventName);
+            GameAudioService.PlaySoundEvent(eventName);
         }
     }
 }

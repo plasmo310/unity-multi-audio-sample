@@ -18,7 +18,7 @@ namespace AudioLib.UnityAudio
             public UnityEngine.GameObject ListenerObject;
 
             /// <summary>
-            /// MonoBehaviourハンドラ(フェード処理用)
+            /// MonoBehaviourハンドラ(コルーチン実行用)
             /// </summary>
             public MonoBehaviour MonoBehaviourHandler;
 
@@ -88,14 +88,6 @@ namespace AudioLib.UnityAudio
             /// 紐づくサウンドシート名
             /// </summary>
             public string SoundSheetName;
-
-            // public AudioMixerInfo(string mixerName, string mixerGroupName, string volumeParamName, string soundSheetName)
-            // {
-            //     MixerName = mixerName;
-            //     MixerGroupName = mixerGroupName;
-            //     VolumeParamName = volumeParamName;
-            //     SoundSheetName = soundSheetName;
-            // }
         }
 
         /// <summary>

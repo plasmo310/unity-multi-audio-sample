@@ -51,7 +51,7 @@ namespace GameSample.Managers
         /// <summary>
         /// Audioサービス
         /// </summary>
-        private IGameAudioService AudioService => ServiceLocator.Resolve<IGameAudioService>();
+        private IGameAudioService GameAudioService => ServiceLocator.Resolve<IGameAudioService>();
         private IGameAudioSettings GameAudioSettings => ServiceLocator.Resolve<IGameAudioSettings>();
 
         private void Start()
@@ -80,42 +80,42 @@ namespace GameSample.Managers
 
             _uiAudioConfig.gameObject.SetActive(false);
             _uiAudioConfig.SetListenerBgImage(() => _uiAudioConfig.gameObject.SetActive(false));
-            _uiAudioConfig.SetValueMasterVolumeSlider(AudioService.MasterVolume);
-            _uiAudioConfig.SetValueBgmVolumeSlider(AudioService.BgmVolume);
-            _uiAudioConfig.SetValueSeVolumeSlider(AudioService.SeVolume);
-            _uiAudioConfig.SetListenerMasterVolumeSlider(value => AudioService.MasterVolume = value);
-            _uiAudioConfig.SetListenerBgmVolumeSliderCallback(value => AudioService.BgmVolume = value);
-            _uiAudioConfig.SetListenerSeVolumeSliderCallback(value => AudioService.SeVolume = value);
+            _uiAudioConfig.SetValueMasterVolumeSlider(GameAudioService.MasterVolume);
+            _uiAudioConfig.SetValueBgmVolumeSlider(GameAudioService.BgmVolume);
+            _uiAudioConfig.SetValueSeVolumeSlider(GameAudioService.SeVolume);
+            _uiAudioConfig.SetListenerMasterVolumeSlider(value => GameAudioService.MasterVolume = value);
+            _uiAudioConfig.SetListenerBgmVolumeSliderCallback(value => GameAudioService.BgmVolume = value);
+            _uiAudioConfig.SetListenerSeVolumeSliderCallback(value => GameAudioService.SeVolume = value);
         }
         private void StopBgm()
         {
-            AudioService.StopAllBgm();
+            GameAudioService.StopAllBgm();
         }
 
         private void StopFadeBgm()
         {
-            AudioService.StopAllBgm(new IGameAudioService.SoundStopOption() { FadeTimeMs = 1000 });
+            GameAudioService.StopAllBgm(new IGameAudioService.SoundStopOption() { FadeTimeMs = 1000 });
         }
 
         private void PlayBgm01()
         {
-            AudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmSpaceWould);
+            GameAudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmSpaceWould);
         }
 
         private void PlayBgm02()
         {
-            AudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmShotThunder);
+            GameAudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmShotThunder);
         }
 
         private void PlayFadeBgm01()
         {
-            AudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmSpaceWould,
+            GameAudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmSpaceWould,
                 new IGameAudioService.SoundPlayOption() { FadeTimeMs = 1000});
         }
 
         private void PlayFadeBgm02()
         {
-            AudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmShotThunder,
+            GameAudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmShotThunder,
                 new IGameAudioService.SoundPlayOption() { FadeTimeMs = 1000});
         }
 
@@ -137,37 +137,37 @@ namespace GameSample.Managers
 
         private void ChangeEffectBgmNormal()
         {
-            AudioService.ChangeBgmEffect(IGameAudioService.EffectType.Normal);
+            GameAudioService.ChangeBgmEffect(IGameAudioService.EffectType.Normal);
         }
 
         private void ChangeEffectBgmReverb()
         {
-            AudioService.ChangeBgmEffect(IGameAudioService.EffectType.Reverb);
+            GameAudioService.ChangeBgmEffect(IGameAudioService.EffectType.Reverb);
         }
 
         private void ChangeEffectBgmDistortion()
         {
-            AudioService.ChangeBgmEffect(IGameAudioService.EffectType.Distortion);
+            GameAudioService.ChangeBgmEffect(IGameAudioService.EffectType.Distortion);
         }
 
         private void ChangeEffectSeNormal()
         {
-            AudioService.ChangeSeEffect(IGameAudioService.EffectType.Normal);
+            GameAudioService.ChangeSeEffect(IGameAudioService.EffectType.Normal);
         }
 
         private void ChangeEffectSeReverb()
         {
-            AudioService.ChangeSeEffect(IGameAudioService.EffectType.Reverb);
+            GameAudioService.ChangeSeEffect(IGameAudioService.EffectType.Reverb);
         }
 
         private void ChangeEffectSeDistortion()
         {
-            AudioService.ChangeSeEffect(IGameAudioService.EffectType.Distortion);
+            GameAudioService.ChangeSeEffect(IGameAudioService.EffectType.Distortion);
         }
 
         private void Pause()
         {
-            AudioService.Pause();
+            GameAudioService.Pause();
             foreach (var robot in _robots)
             {
                 robot.Pause();
@@ -176,7 +176,7 @@ namespace GameSample.Managers
 
         private void Resume()
         {
-            AudioService.Resume();
+            GameAudioService.Resume();
             foreach (var robot in _robots)
             {
                 robot.Resume();
