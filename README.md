@@ -1,13 +1,13 @@
 ## unity-multi-audio-sample
-* UnityAudio、CRI ADX2、Wwiseで切り替え可能なオーディオサンプルになります。
+* UnityAudio、CRI ADX、Wwiseで切り替え可能なオーディオサンプルになります。
   * ゲーム側からはオーディオライブラリは意識せずに実行できるよう実装してあります。
 * 下記のサンプルを用意しています。
   * 基本機能
     * BGMフェード再生
     * SEの3D再生
     * DSPエフェクト
-  * オーディオスペクトラムの表示 ※UnityAudio、CRI ADX2のみ
-  * インタラクティブミュージック ※CRI ADX2、Wwiseのみ
+  * オーディオスペクトラムの表示 ※UnityAudio、CRI ADXのみ
+  * インタラクティブミュージック ※CRI ADX、Wwiseのみ
     * ブロック遷移による切替
     * オーディオ側に設定したイベントによる制御
     * ゲームパラメータ値によるサウンド変化
@@ -16,7 +16,7 @@
 ### バージョン
 * Unity
   * 2022.3.16f1
-* CRI ADX2
+* CRI ADX
   * CRI Atom Craft LE
     * 3.50.06
   * CRIWARE Unity Plug-in
