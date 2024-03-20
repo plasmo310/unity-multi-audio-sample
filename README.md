@@ -26,6 +26,13 @@
 
 ### シーン構成
 * 各シーンは <a href="/Assets/GameSample/Scenes">Assets/GameSample/Scenes</a> 配下に格納しています。
+  * <code>Tools/Switch AudioLib</code>より使用するライブラリを切り替えて実行してください。<br><img width=240 src="/ReadMeContents/editor_switch_audio.png">
+    * ※選択されたライブラリに応じて、下記Defineを切り替えるよう実装しています。
+      ```
+      AUDIO_LIB_UNITY_AUDIO
+      AUDIO_LIB_CRI
+      AUDIO_LIB_WWISE
+      ```
 
 | Scene名 | 概要                                                                                                                                                                                                                                                             | UnityAudio | CRI ADX2 | Wwise
 | -- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -- | -- | -- |
@@ -34,10 +41,78 @@
 | Interactive.unity | インタラクティブミュージックのサンプル<br>プレイヤーの動きに合わせてBGMを変化させる<br>・ブロック再生による切替<br>・シーケンスコールバックによるイベント処理<br>・AISACコントロールによるサウンド変化<br>・BeatSyncによるビート同期操作<br><img width=400 src="/ReadMeContents/Interactive_01.png"><br><img width=400 src="/ReadMeContents/Interactive_02.png"> | × | 〇 | 〇 |
 
 ### フォルダ構成
-TODO
 
-### オーディオライブラリの切替
-TODO
+##### 全体構成
+| フォルダパス | 概要 |
+| -- | -- |
+| Assets/AudioLib | 各オーディオライブラリの処理を実行する処理 |
+| Assets/GameSample | サンプルゲームに関連する処理 |
+| CriAtomCraftProject | CriAtomCraftプロジェクト |
+| WwiseProject | Wwiseプロジェクト |
 
-### ゲーム側での実装
+##### UnityAudio関連
+| フォルダパス | 概要 |
+| -- | -- |
+| Assets/AudioLib/UnityAudio | APIを実行する処理 |
+| Assets/GameSample/Runtime/Audio/UnityAudio | サンプルゲーム固有のオーディオ関連処理 |
+| Assets/GameSample/Resouces/UnityAudio | UnityAudioで実行するためのサウンドデータ |
+
+##### CRI ADX関連
+| フォルダパス | 概要 |
+| -- | -- |
+| Assets/AudioLib/CriAdx | APIを実行する処理 |
+| Assets/GameSample/Runtime/Audio/CriAdx | サンプルゲーム固有のオーディオ関連処理 |
+| StreamingAssets/Audio/CriAdx | CriAtomCraftプロジェクトから出力したサウンドデータ |
+
+##### Wwise関連
+| フォルダパス | 概要 |
+| -- | -- |
+| Assets/AudioLib/Wwise | APIを実行する処理 |
+| Assets/GameSample/Runtime/Audio/Wwise | サンプルゲーム固有のオーディオ関連処理 |
+| StreamingAssets/Audio/Wwise | Wwiseプロジェクトから出力したサウンドデータ |
+
+### 設計について
+* パッケージ構成
+  * <a href="Assets/GameSample">Assets/GameSample</a>配下にサンプルシーン関連の処理、<br><a href="Assets/AudioLib">Assets/AudioLib</a>配下に各APIへアクセスするための処理をそれぞれ格納しています。<br>
+    <img width=280 src="/ReadMeContents/uml_package.png">
+* クラス図(関連処理)
+  * <code>GameSample.Audio</code>内ではゲーム固有のオーディオ関連の処理を実装し、<br>各オーディオライブラリへのアクセスは<code>AudioLib</code>配下の各サービスから行うようにしています。<br>
+    <img width=800 src="/ReadMeContents/uml_class.png">
+  * ゲーム側からは<code>ServiceLocator</code>を通じて、<code>IGameAudioService</code>、<code>IGameAudioSettings</code>に対してオーディオ関連の処理を実行しています。
+    ```
+    // ===== 例: ServiceLocatorへの登録 =====
+    
+            /// <summary>
+            /// シーンのロード後の初期化処理
+            /// </summary>
+            [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+            private static void InitializeAfterSceneLoad()
+            {
+                // サービス登録
+    #if AUDIO_LIB_UNITY_AUDIO
+                ServiceLocator.Register<IGameAudioSettings>(new GameUnityAudioSettings());
+                ServiceLocator.Register<IGameAudioService>(new GameUnityAudioService());
+    #elif AUDIO_LIB_CRI
+                ServiceLocator.Register<IGameAudioSettings>(new GameCriAdxAudioSettings());
+                ServiceLocator.Register<IGameAudioService>(new GameCriAdxAudioService());
+    #elif AUDIO_LIB_WWISE
+                ServiceLocator.Register<IGameAudioSettings>(new GameWwiseAudioSettings());
+                ServiceLocator.Register<IGameAudioService>(new GameWwiseAudioService());
+    #endif
+            }
+    
+    // ===== 例: オーディオ再生 =====
+    
+            /// <summary>
+            /// Audioサービス
+            /// </summary>
+            private IGameAudioService GameAudioService => ServiceLocator.Resolve<IGameAudioService>();
+            private IGameAudioSettings GameAudioSettings => ServiceLocator.Resolve<IGameAudioSettings>();
+    
+            private void PlayBgm01()
+            {
+                GameAudioService.PlaySoundEvent(GameAudioSettings.SoundEventName_BgmSpaceWould);
+            }
+    ```
+
 TODO
