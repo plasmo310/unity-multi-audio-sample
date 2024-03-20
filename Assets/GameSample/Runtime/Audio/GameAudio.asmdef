@@ -1,5 +1,5 @@
 {
-    "name": "GameSampleAudio",
+    "name": "GameAudio",
     "rootNamespace": "",
     "references": [
         "GUID:b4565dfdde1f0834ca6bbadef4b0640f",

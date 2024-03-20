@@ -560,7 +560,6 @@ namespace AudioLib.UnityAudio
         /// <returns></returns>
         private AudioMixer LoadAudioMixer(string audioMixerName)
         {
-            Debug.Log($"{AudioMixerAssetPath} {audioMixerName}");
             var audioMixerPath = Path.Combine(AudioMixerAssetPath, audioMixerName);
             return Resources.Load(audioMixerPath) as AudioMixer;
         }

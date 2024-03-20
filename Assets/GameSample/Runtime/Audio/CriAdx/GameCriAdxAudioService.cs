@@ -1,31 +1,30 @@
 using System.Linq;
-using AudioLib.Wwise;
-using GameSample.Audio.Settings;
+using AudioLib.CriAdx;
 using UnityEngine;
 
 namespace GameSample.Audio
 {
     /// <summary>
-    /// GameAudio管理クラス (Wwise)
+    /// GameAudio管理クラス (CRI)
     /// </summary>
-    public class GameWwiseAudioService : IGameAudioService
+    public class GameCriAdxAudioService : IGameAudioService
     {
         /// <summary>
         /// オーディオAPIサービス
         /// </summary>
-        private readonly IWwiseApiService _wwiseApiService;
+        private readonly ICriAdxApiService _criAdxApiService;
 
-        public GameWwiseAudioService()
+        public GameCriAdxAudioService()
         {
             // 初期生成情報
-            var initializeSettings = GameWwiseAudioSettings.Wwise.InitializeSettings;
+            var initializeSettings = GameCriAdxAudioSettings.CriAdx.InitializeSetting;
 
-            // Listenerオブジェクト
+            // Listenerオブジェクト設定
             var listenerObject = Camera.main.gameObject;
             initializeSettings.ListenerObject = listenerObject;
 
             // サービス生成
-            _wwiseApiService = new WwiseApiService(initializeSettings);
+            _criAdxApiService = new CriAdxApiService(initializeSettings);
         }
 
         /// <summary>
@@ -33,8 +32,8 @@ namespace GameSample.Audio
         /// </summary>
         public float MasterVolume
         {
-            get => _wwiseApiService.GetMasterVolume();
-            set => _wwiseApiService.SetMasterVolume(value);
+            get => _criAdxApiService.GetBusVolume(GameCriAdxAudioSettings.CriAdx.BusName.Master);
+            set => _criAdxApiService.SetBusVolume(GameCriAdxAudioSettings.CriAdx.BusName.Master, value);
         }
 
         /// <summary>
@@ -42,8 +41,8 @@ namespace GameSample.Audio
         /// </summary>
         public float BgmVolume
         {
-            get => _wwiseApiService.GetSoundBankVolume(GameWwiseAudioSettings.Wwise.SoundBankName.Bgm);
-            set => _wwiseApiService.SetSoundBankVolume(GameWwiseAudioSettings.Wwise.SoundBankName.Bgm, value);
+            get => _criAdxApiService.GetCategoryVolume(GameCriAdxAudioSettings.CriAdx.CategoryName.Bgm);
+            set => _criAdxApiService.SetCategoryVolume(GameCriAdxAudioSettings.CriAdx.CategoryName.Bgm, value);
         }
 
         /// <summary>
@@ -51,8 +50,8 @@ namespace GameSample.Audio
         /// </summary>
         public float SeVolume
         {
-            get => _wwiseApiService.GetSoundBankVolume(GameWwiseAudioSettings.Wwise.SoundBankName.Se);
-            set => _wwiseApiService.SetSoundBankVolume(GameWwiseAudioSettings.Wwise.SoundBankName.Se, value);
+            get => _criAdxApiService.GetCategoryVolume(GameCriAdxAudioSettings.CriAdx.CategoryName.Se);
+            set => _criAdxApiService.SetCategoryVolume(GameCriAdxAudioSettings.CriAdx.CategoryName.Se, value);
         }
 
         /// <summary>
@@ -60,8 +59,7 @@ namespace GameSample.Audio
         /// </summary>
         public void Pause()
         {
-            var eventName = GameWwiseAudioSettings.Wwise.SoundEventName.GlobalPauseAll;
-            _wwiseApiService.DoEvent(GameWwiseAudioSettings.Wwise.GetSoundBankName(eventName), eventName);
+            _criAdxApiService.Pause();
         }
 
         /// <summary>
@@ -69,8 +67,7 @@ namespace GameSample.Audio
         /// </summary>
         public void Resume()
         {
-            var eventName = GameWwiseAudioSettings.Wwise.SoundEventName.GlobalResumeAll;
-            _wwiseApiService.DoEvent(GameWwiseAudioSettings.Wwise.GetSoundBankName(eventName), eventName);
+            _criAdxApiService.Resume();
         }
 
         /// <summary>
@@ -79,8 +76,9 @@ namespace GameSample.Audio
         /// <param name="soundSheetName">サウンドシート名</param>
         public void LoadSoundSheet(string soundSheetName)
         {
-            var soundBankInfo = GameWwiseAudioSettings.Wwise.SoundBankInfoArray.FirstOrDefault(soundBankInfo => soundBankInfo.Name == soundSheetName);
-            _wwiseApiService.LoadSoundBank(soundBankInfo);
+            var cueSheetInfo = GameCriAdxAudioSettings.CriAdx.CueSheetInfoArray
+                    .FirstOrDefault(cueSheetInfo => cueSheetInfo.Name == soundSheetName);
+            _criAdxApiService.RegisterCueSheet(cueSheetInfo);
         }
 
         /// <summary>
@@ -88,7 +86,7 @@ namespace GameSample.Audio
         /// </summary>
         public void UnLoadAllSoundSheet()
         {
-            _wwiseApiService.UnLoadAllSoundBank();
+            _criAdxApiService.RemoveAllCueSheet();
         }
 
         /// <summary>
@@ -97,20 +95,10 @@ namespace GameSample.Audio
         /// <param name="option">停止オプション</param>
         public void StopAllBgm(IGameAudioService.SoundStopOption option = null)
         {
-            var bgmSoundBankName = GameWwiseAudioSettings.Wwise.SoundBankName.Bgm;
-            if (option != null)
+            _criAdxApiService.StopAll(new ICriAdxApiService.SoundStopOption()
             {
-                // オプション設定がある場合、個々のEventに対して行う
-                var eventNameArray = GameWwiseAudioSettings.Wwise.SoundBankEventInfoDictionary[bgmSoundBankName];
-                foreach (var eventName in eventNameArray)
-                {
-                    StopSoundEvent(eventName, option);
-                }
-            }
-            else
-            {
-                _wwiseApiService.StopAllSoundBank(GameWwiseAudioSettings.Wwise.SoundBankName.Bgm);
-            }
+                FadeTimeMs = option?.FadeTimeMs ?? 0,
+            });
         }
 
         /// <summary>
@@ -120,7 +108,7 @@ namespace GameSample.Audio
         /// <param name="option">停止オプション</param>
         public void StopSoundEvent(string eventName, IGameAudioService.SoundStopOption option = null)
         {
-            _wwiseApiService.StopEvent(GameWwiseAudioSettings.Wwise.GetSoundBankName(eventName), eventName, new IWwiseApiService.SoundStopOption()
+            _criAdxApiService.Stop(GameCriAdxAudioSettings.CriAdx.GetCueSheetName(eventName), new ICriAdxApiService.SoundStopOption()
             {
                 FadeTimeMs = option?.FadeTimeMs ?? 0,
             });
@@ -133,14 +121,22 @@ namespace GameSample.Audio
         /// <param name="option">再生オプション</param>
         public void PlaySoundEvent(string eventName, IGameAudioService.SoundPlayOption option = null)
         {
-            _wwiseApiService.PlayEvent(GameWwiseAudioSettings.Wwise.GetSoundBankName(eventName), eventName,
-                new IWwiseApiService.SoundPlayOption()
-                {
-                    IsStopOther = true,
-                    FadeTimeMs = option?.FadeTimeMs ?? 0,
-                    BeatSyncCallback = option?.BeatSyncCallback,
-                    CustomEventCallback = option?.CustomEventCallback,
-                });
+            _criAdxApiService.Play(GameCriAdxAudioSettings.CriAdx.GetCueSheetName(eventName), eventName,
+                new ICriAdxApiService.SoundPlayOption()
+            {
+                FadeTimeMs = option?.FadeTimeMs ?? 0,
+            });
+
+            // コールバックイベントの追加
+            if (option?.BeatSyncCallback != null)
+            {
+                _criAdxApiService.SetBeatSyncCallback(
+                    GameCriAdxAudioSettings.CriAdx.GetCueSheetName(eventName), option.BeatSyncLabel, option.BeatSyncCallback);
+            }
+            if (option?.CustomEventCallback != null)
+            {
+                _criAdxApiService.SetSequenceCallback(option.CustomEventName, option.CustomEventCallback);
+            }
         }
 
         /// <summary>
@@ -149,16 +145,13 @@ namespace GameSample.Audio
         /// <param name="eventName">サウンドイベント名</param>
         /// <param name="gameObject">再生するゲームオブジェクト</param>
         /// <param name="option">再生オプション</param>
-        public void PlaySoundEvent(string eventName, UnityEngine.GameObject gameObject, IGameAudioService.SoundPlayOption option = null)
+        public void PlaySoundEvent(string eventName, GameObject gameObject, IGameAudioService.SoundPlayOption option = null)
         {
-            _wwiseApiService.PlayEvent(GameWwiseAudioSettings.Wwise.GetSoundBankName(eventName), eventName, gameObject,
-                new IWwiseApiService.SoundPlayOption()
-                {
-                    IsStopOther = true,
-                    FadeTimeMs = option?.FadeTimeMs ?? 0,
-                    BeatSyncCallback = option?.BeatSyncCallback,
-                    CustomEventCallback = option?.CustomEventCallback,
-                });
+            _criAdxApiService.Play3d(gameObject, GameCriAdxAudioSettings.CriAdx.GetCueSheetName(eventName), eventName,
+                new ICriAdxApiService.SoundPlayOption()
+            {
+                FadeTimeMs = option?.FadeTimeMs ?? 0,
+            });
         }
 
         /// <summary>
@@ -170,16 +163,13 @@ namespace GameSample.Audio
             switch (effectType)
             {
                 case IGameAudioService.EffectType.Normal:
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.BgmReverb, 0);
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.BgmDistortion, 0);
+                    _criAdxApiService.ChangeBusSnapshot(GameCriAdxAudioSettings.CriAdx.BusSnapshotName.Normal, 1000);
                     break;
                 case IGameAudioService.EffectType.Reverb:
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.BgmReverb, 1);
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.BgmDistortion, 0);
+                    _criAdxApiService.ChangeBusSnapshot(GameCriAdxAudioSettings.CriAdx.BusSnapshotName.BgmReverb, 1000);
                     break;
                 case IGameAudioService.EffectType.Distortion:
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.BgmReverb, 0);
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.BgmDistortion, 1);
+                    _criAdxApiService.ChangeBusSnapshot(GameCriAdxAudioSettings.CriAdx.BusSnapshotName.BgmDistortion, 1000);
                     break;
             }
         }
@@ -193,16 +183,13 @@ namespace GameSample.Audio
             switch (effectType)
             {
                 case IGameAudioService.EffectType.Normal:
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.SeReverb, 0);
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.SeDistortion, 0);
+                    _criAdxApiService.ChangeBusSnapshot(GameCriAdxAudioSettings.CriAdx.BusSnapshotName.Normal, 1000);
                     break;
                 case IGameAudioService.EffectType.Reverb:
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.SeReverb, 1);
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.SeDistortion, 0);
+                    _criAdxApiService.ChangeBusSnapshot(GameCriAdxAudioSettings.CriAdx.BusSnapshotName.SeReverb, 1000);
                     break;
                 case IGameAudioService.EffectType.Distortion:
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.SeReverb, 0);
-                    _wwiseApiService.SetGameParameter(GameWwiseAudioSettings.Wwise.GameParameterName.SeDistortion, 1);
+                    _criAdxApiService.ChangeBusSnapshot(GameCriAdxAudioSettings.CriAdx.BusSnapshotName.SeDistortion, 1000);
                     break;
             }
         }
@@ -216,12 +203,13 @@ namespace GameSample.Audio
             switch (state)
             {
                 case IGameAudioService.NextBlockState.BgmAtomChainIntro:
-                    _wwiseApiService.SetState(GameWwiseAudioSettings.Wwise.StateGroupName.BgmAtomChain,
-                        GameWwiseAudioSettings.Wwise.StateName.BgmAtomChainIntro);
+                    // イントロ再生時は何もしない
                     break;
                 case IGameAudioService.NextBlockState.BgmAtomChainMain:
-                    _wwiseApiService.SetState(GameWwiseAudioSettings.Wwise.StateGroupName.BgmAtomChain,
-                        GameWwiseAudioSettings.Wwise.StateName.BgmAtomChainMain);
+                    // 対象インデックスに進める
+                    const int playBlock = 2;
+                    var eventName = GameCriAdxAudioSettings.CriAdx.CueName.BgmAtomChain;
+                    _criAdxApiService.SetNextBlockIndex(eventName, playBlock);
                     break;
             }
         }
@@ -234,7 +222,8 @@ namespace GameSample.Audio
         /// <param name="value">パラメータ値</param>
         public void SetGameParameter(string eventName, string parameterName, float value)
         {
-            _wwiseApiService.SetGameParameter(parameterName, value);
+            _criAdxApiService.SetAisacControl(GameCriAdxAudioSettings.CriAdx.GetCueSheetName(eventName), eventName, parameterName, value);
+
         }
 
         /// <summary>
@@ -245,8 +234,8 @@ namespace GameSample.Audio
         /// <returns>作成に成功したか？</returns>
         public bool SetSpectrumAnalyzer(string eventName, int sampleCount)
         {
-            UnityEngine.Debug.LogWarning("not support Wwise => SetSpectrumAnalyzer.");
-            return false;
+            _criAdxApiService.SetSpectrumAnalyzer(GameCriAdxAudioSettings.CriAdx.GetCueSheetName(eventName), sampleCount);
+            return true;
         }
 
         /// <summary>
@@ -257,8 +246,7 @@ namespace GameSample.Audio
         /// <returns></returns>
         public float[] GetSpectrumData(int sampleCount, bool isConvertDecibel)
         {
-            UnityEngine.Debug.LogWarning("not support Wwise GetSpectrumData.");
-            return new float[sampleCount];
+            return _criAdxApiService.GetSpectrumData(sampleCount, isConvertDecibel);
         }
     }
 }

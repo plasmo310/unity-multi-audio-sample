@@ -1,5 +1,4 @@
 using AudioLib.UnityAudio;
-using GameSample.Audio.Settings;
 using UnityEngine;
 
 namespace GameSample.Audio

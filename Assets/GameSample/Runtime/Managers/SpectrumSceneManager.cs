@@ -1,6 +1,5 @@
 using System;
 using GameSample.Audio;
-using GameSample.Audio.Settings;
 using GameSample.Common;
 using GameSample.Spectrum;
 using UnityEngine;

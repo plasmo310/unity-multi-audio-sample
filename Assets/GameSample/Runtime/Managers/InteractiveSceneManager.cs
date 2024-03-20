@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using GameSample.Audio;
-using GameSample.Audio.Settings;
 using GameSample.Common;
 using GameSample.Objects;
 using GameSample.Objects.BeatSync;

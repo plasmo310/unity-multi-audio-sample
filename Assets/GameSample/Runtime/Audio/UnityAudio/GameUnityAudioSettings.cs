@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AudioLib.UnityAudio;
 
-namespace GameSample.Audio.Settings
+namespace GameSample.Audio
 {
     /// <summary>
     /// ゲーム内サウンド設定

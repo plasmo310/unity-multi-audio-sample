@@ -1,4 +1,4 @@
-namespace GameSample.Audio.Settings
+namespace GameSample.Audio
 {
     /// <summary>
     /// ゲーム内サウンド設定 共通アクセス項目
