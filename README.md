@@ -38,7 +38,7 @@
 | -- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -- | -- | -- |
 | SoundTest.unity | 基本機能のサンプル集<br>・BGMクロスフェード<br>・SEの3D再生<br>・DSPエフェクト<br><img width=400 src="/ReadMeContents/SoundTest_01.png"><br>・カテゴリによる音量設定画面<br><img width=400 src="/ReadMeContents/SoundTest_02.png">                                                                       | 〇 | 〇 | 〇 |
 | Spectrum.unity | オーディオスペクトラムの実装サンプル<br>周波数データを取得して表示する<br>・LineRendererによる描画<br><img width=400 src="/ReadMeContents/Spectrum_01.png"><br>・3DCubeによる描画<br><img width=400 src="/ReadMeContents/Spectrum_02.png">                                                                  | 〇 | 〇 | × |
-| Interactive.unity | インタラクティブミュージックのサンプル<br>プレイヤーの動きに合わせてBGMを変化させる<br>・ブロック再生による切替<br>・シーケンスコールバックによるイベント処理<br>・AISACコントロールによるサウンド変化<br>・BeatSyncによるビート同期操作<br><img width=400 src="/ReadMeContents/Interactive_01.png"><br><img width=400 src="/ReadMeContents/Interactive_02.png"> | × | 〇 | 〇 |
+| Interactive.unity | インタラクティブミュージックのサンプル<br>プレイヤーの動きに合わせてBGMを変化させる<br>・ブロック遷移による切替<br>・オーディオ側に設定したイベントによる制御<br>・ゲームパラメータ値によるサウンド変化<br>・ビートに合わせたオブジェクトの伸縮<br><img width=400 src="/ReadMeContents/Interactive_01.png"><br><img width=400 src="/ReadMeContents/Interactive_02.png"> | × | 〇 | 〇 |
 
 ### フォルダ構成
 
