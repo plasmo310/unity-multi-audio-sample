@@ -73,6 +73,7 @@ crashlytics-build.properties
 
 # IDE
 .idea/
+*.csproj.DotSettings
 
 ## ----------------- ##
 ## Start WWise Stuff ##
