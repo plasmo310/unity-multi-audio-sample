@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="ユーザー設定" AcbInfoFileOutputFlag="False" AcfOutputFlag="True" AutoRepreviewFlag="False" BuildRootPath="/Users/plasmo/workspace/GitProjects/unity-cri-audio-sample/CriAtomCraftProject/Output" CsHeaderOutputFlag="True" CurrentBusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_Default" CurrentPreviewTargetConfig="/CriAtomCraftV2Root/GlobalSettings/TargetConfigs/Public" CurrentTargetConfig="/CriAtomCraftV2Root/GlobalSettings/TargetConfigs/Public" FormatVersion="Ver.1.04.00" LastOpenedWorkUnitName="WorkUnit_0" OoUniqId="4ca93b38-7fce-4cdb-b0e4-ba3a03cf54fb" SelectPreviewType="None" UnityInfoOutputFlag="True" VersionControlCommitWhenClose="False" VersionControlIncludeAllItemsOfWu="False" VersionControlIncludeChildItem="True" VersionControlLockWhenSaved="False" VersionInfoV3="Ver.3.50.06" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoUserSettings">
+      <Orca OrcaName="PreviewSettingsMap" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoTargetPreviewSettingMapFolder">
+        <Orca OrcaName="Public" PreviewSettingsUniqId="21bafdeb-edc6-4638-b659-12ce71850bbe" TargetConfigUniqId="d041ea1d-8cbd-4d6f-b2dd-0b09b3830198" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoTargetPreviewSettingMap"/>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

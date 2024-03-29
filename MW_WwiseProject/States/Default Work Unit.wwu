@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8C0FE277-ADA9-43F6-96C0-7971DEC61192}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{8C0FE277-ADA9-43F6-96C0-7971DEC61192}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BGM_AtomChain" ID="{F44F2E88-E70D-46AC-9BE9-CA880C8D00D8}">
+					<ChildrenList>
+						<State Name="None" ID="{136F478D-7798-4171-8C5A-0CEAE6ED860B}"/>
+						<State Name="BGM_AtomChain_Intro" ID="{B999ADB7-E053-4834-A5F7-D71F4879DF1E}"/>
+						<State Name="BGM_AtomChain_Main" ID="{A49B1576-672F-46DD-8FAA-A415B571A4E3}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -1,0 +1,17 @@
+{
+    "name": "AudioLib.Runtime.Wwise",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e0072b32a7abe43e280a28269dbfdd76",
+        "GUID:893110027bb424da08a7c5e098bee3ac"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

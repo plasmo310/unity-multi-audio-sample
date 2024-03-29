@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0E163F0A-FF5B-44C7-A7A5-EF1FA9DDC0EF}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{0E163F0A-FF5B-44C7-A7A5-EF1FA9DDC0EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="BGM_Reverb" ID="{1613DD43-C9D6-49ED-B746-55D515B5B81C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SE_Reverb" ID="{C192E0F8-B817-46ED-89E9-805683BFF162}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Battle" ID="{6433ECD5-6D45-4A24-A4D1-BC37C4C8C18D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BGM_Distortion" ID="{F3D6708E-D658-4EFA-A5E8-385CD8AE9023}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SE_Distortion" ID="{3A278E53-CCF8-4E37-B80D-F63AC836A021}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

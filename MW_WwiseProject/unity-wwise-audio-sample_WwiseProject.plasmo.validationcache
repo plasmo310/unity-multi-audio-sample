@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="119">
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\unity-wwise-audio-sample_WwiseProject.wproj" DateLow="1708681434" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\States\Default Work Unit.wwu" DateLow="1708839774" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1708848480" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Queries\Factory Queries.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708845615" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1708851093" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1708851597" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Events\Default Work Unit.wwu" DateLow="1708851634" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Effects\Factory Effects.wwu" DateLow="1708845561" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-wwise-audio-sample\unity-wwise-audio-sample_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708838024" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\unity-wwise-audio-sample_WwiseProject.wproj" DateLow="1708681434" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\States\Default Work Unit.wwu" DateLow="1708839774" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1708851685" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Queries\Factory Queries.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708845615" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1708851661" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1708851597" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Events\Default Work Unit.wwu" DateLow="1708851672" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Effects\Factory Effects.wwu" DateLow="1708845561" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\unity-wwise-audio-sample_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708838024" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\unity-wwise-audio-sample_WwiseProject.wproj" DateLow="1708681434" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\States\Default Work Unit.wwu" DateLow="1708839774" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1708851685" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Queries\Factory Queries.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708845615" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1708851661" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1708851597" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Events\Default Work Unit.wwu" DateLow="1708851672" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Effects\Factory Effects.wwu" DateLow="1708845561" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1708665650" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\plasmo\workspace\GitProjects\unity-multi-audio-sample\MW_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708838024" DateHigh="0"/>
+</ValidationCache>

@@ -1,0 +1,91 @@
+@startuml MultiAudio
+
+package AudioLib {
+    package UnityAudio {
+        interface IUnityAudioApiService {
+        }
+        class UnityAudioApiService {
+        }
+    }
+    package CriAdx {
+        interface ICriAdxApiService {
+        }
+        class CriAdxApiService {
+        }
+    }
+    package Wwise {
+        interface IWwiseApiService {
+        }
+        class WwiseApiService {
+        }
+    }
+}
+
+package GameSample
+{
+    package Audio {
+        interface IGameAudioService {
+        }
+        class GameUnityAudioService {
+        }
+        class GameCriAdxAudioService {
+        }
+        class GameWwiseAudioService {
+        }
+        interface IGameAudioSettings {
+        }
+        class GameUnityAudioSettings {
+        }
+        class GameCriAdxAudioSettings {
+        }
+        class GameWwiseAudioSettings {
+        }
+    }
+    package Managers {
+    }
+    package Objects {
+    }
+    package Common {
+        class ServiceLocator {
+        }
+    }
+}
+
+package CriMw.CriWare {
+}
+package AK.Wwise {
+}
+
+
+IUnityAudioApiService <|-- UnityAudioApiService
+ICriAdxApiService     <|-- CriAdxApiService
+IWwiseApiService      <|-- WwiseApiService
+
+IGameAudioService <|-- GameUnityAudioService
+IGameAudioService <|-- GameCriAdxAudioService
+IGameAudioService <|-- GameWwiseAudioService
+
+GameUnityAudioSettings  --|> IGameAudioSettings
+GameCriAdxAudioSettings --|> IGameAudioSettings
+GameWwiseAudioSettings  --|> IGameAudioSettings
+
+GameUnityAudioService  --> GameUnityAudioSettings
+GameCriAdxAudioService --> GameCriAdxAudioSettings
+GameWwiseAudioService  --> GameWwiseAudioSettings
+
+GameUnityAudioService  --> IUnityAudioApiService
+GameCriAdxAudioService --> ICriAdxApiService
+GameWwiseAudioService  --> IWwiseApiService
+
+Managers --> ServiceLocator
+Objects --> ServiceLocator
+
+Managers --> IGameAudioSettings
+Managers --> IGameAudioService
+Objects --> IGameAudioSettings
+Objects --> IGameAudioService
+
+CriAdxApiService --> CriMw.CriWare
+WwiseApiService --> AK.Wwise
+
+@enduml

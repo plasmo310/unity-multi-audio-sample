@@ -1,0 +1,28 @@
+@startuml MultiAudio
+
+package AudioLib {
+    package UnityAudio {
+    }
+    package CriAdx {
+    }
+    package Wwise {
+    }
+}
+
+package GameSample
+{
+    package Audio {
+    }
+    package Managers {
+    }
+    package Objects {
+    }
+}
+
+Managers --> Audio
+Objects --> Audio
+Audio --> UnityAudio
+Audio --> CriAdx
+Audio --> Wwise
+
+@enduml
