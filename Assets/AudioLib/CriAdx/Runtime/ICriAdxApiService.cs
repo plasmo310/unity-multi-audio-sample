@@ -4,7 +4,7 @@ using UnityEngine;
 namespace AudioLib.CriAdx
 {
     /// <summary>
-    /// CriAtom API操作クラス interface
+    /// CRI ADX API操作クラス interface
     /// </summary>
     public interface ICriAdxApiService
     {

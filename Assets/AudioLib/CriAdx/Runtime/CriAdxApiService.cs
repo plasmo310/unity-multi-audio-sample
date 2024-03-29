@@ -8,14 +8,14 @@ using UnityEngine;
 namespace AudioLib.CriAdx
 {
     /// <summary>
-    /// CriAtom API操作クラス
+    /// CRI ADX API操作クラス
     /// </summary>
     public class CriAdxApiService : ICriAdxApiService, IDisposable
     {
 #if AUDIO_LIB_CRI
 
         /// <summary>
-        /// Wwiseグローバルオブジェクトの生成
+        /// グローバルオブジェクトの生成
         /// シーンロード前に実行する
         /// </summary>
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
